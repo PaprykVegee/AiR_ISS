@@ -1,0 +1,3 @@
+/home/plorenc/Desktop/AiR_ISS/OpenCL/lab5/LAB_03_HelloWorld/HelloWorld/CMakeFiles/HelloWorld.dir
+/home/plorenc/Desktop/AiR_ISS/OpenCL/lab5/LAB_03_HelloWorld/HelloWorld/CMakeFiles/edit_cache.dir
+/home/plorenc/Desktop/AiR_ISS/OpenCL/lab5/LAB_03_HelloWorld/HelloWorld/CMakeFiles/rebuild_cache.dir
