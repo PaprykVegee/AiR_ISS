@@ -1,0 +1,18 @@
+{"time":"2025-10-13T11:16:47.445100355+02:00","level":"INFO","msg":"stream: starting","core version":"0.22.1"}
+{"time":"2025-10-13T11:16:48.018552728+02:00","level":"INFO","msg":"stream: created new stream","id":"wtsootr5"}
+{"time":"2025-10-13T11:16:48.018660862+02:00","level":"INFO","msg":"handler: started","stream_id":"wtsootr5"}
+{"time":"2025-10-13T11:16:48.018831896+02:00","level":"INFO","msg":"stream: started","id":"wtsootr5"}
+{"time":"2025-10-13T11:16:48.018872447+02:00","level":"INFO","msg":"writer: started","stream_id":"wtsootr5"}
+{"time":"2025-10-13T11:16:48.018937303+02:00","level":"INFO","msg":"sender: started","stream_id":"wtsootr5"}
+{"time":"2025-10-13T11:16:48.578793549+02:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":37}
+{"time":"2025-10-13T11:16:48.829887149+02:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":38}
+{"time":"2025-10-13T11:17:03.581447566+02:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":2644}
+{"time":"2025-10-13T11:17:03.867290336+02:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":50}
+{"time":"2025-10-13T11:17:18.75165173+02:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":5197}
+{"time":"2025-10-13T11:17:18.867316945+02:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":21}
+{"time":"2025-10-13T11:17:26.220356386+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.00213086}],"total_operations":1}}
+{"time":"2025-10-13T11:17:27.251695139+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-13T11:17:27.90264329+02:00","level":"INFO","msg":"stream: closing","id":"wtsootr5"}
+{"time":"2025-10-13T11:17:27.902684526+02:00","level":"INFO","msg":"handler: closed","stream_id":"wtsootr5"}
+{"time":"2025-10-13T11:17:27.902821305+02:00","level":"INFO","msg":"sender: closed","stream_id":"wtsootr5"}
+{"time":"2025-10-13T11:17:27.902862829+02:00","level":"INFO","msg":"stream: closed","id":"wtsootr5"}

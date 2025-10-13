@@ -1,0 +1,79 @@
+[{"variableName": "idx2letter", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "letter2idx", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "letters", "type": "list", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.list"}, {"variableName": "mapping", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "src", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_in", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_mask", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_out", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}]
+[{"variableName": "idx2letter", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "letter2idx", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "letters", "type": "list", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.list"}, {"variableName": "mapping", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "src", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_in", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_mask", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_out", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}]
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+Using device: cuda
+Source (numbers): tensor([[2, 7, 6]])
+Target Output (words) idx: tensor([[20, 23, 15, 19,  5, 22,  5, 14, 19,  9, 24]])
+Target Output (words) letter: ['T', 'W', 'O', 'S', 'E', 'V', 'E', 'N', 'S', 'I', 'X']
+Target Input (words with <BOS>) idx: tensor([[ 0, 20, 23, 15, 19,  5, 22,  5, 14, 19,  9]])
+Target Input (words with <BOS>) letter: ['<BOS>', 'T', 'W', 'O', 'S', 'E', 'V', 'E', 'N', 'S', 'I']
+NumberToWordTranslator(
+  (src_emb): Embedding(10, 64)
+  (tgt_emb): Embedding(27, 64)
+  (src_pos): PositionalEncoding()
+  (tgt_pos): PositionalEncoding()
+  (encoder): ModuleList(
+    (0-1): 2 x EncoderBlock(
+      (attn): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-1): 2 x Head(
+            (key): Linear(in_features=64, out_features=32, bias=False)
+            (query): Linear(in_features=64, out_features=32, bias=False)
+            (value): Linear(in_features=64, out_features=32, bias=False)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (linear): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (ff): FeedForwardBLock(
+        (linear1): Linear(in_features=64, out_features=128, bias=True)
+        (gelu): GELU(approximate='none')
+        (linear2): Linear(in_features=128, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (dropout): Dropout(p=0.5, inplace=False)
+    )
+  )
+  (decoder): ModuleList(
+    (0-1): 2 x DecoderBlock(
+      (self_attn): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-1): 2 x Head(
+            (key): Linear(in_features=64, out_features=32, bias=False)
+            (query): Linear(in_features=64, out_features=32, bias=False)
+            (value): Linear(in_features=64, out_features=32, bias=False)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (linear): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (cross_attn): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-1): 2 x Head(
+            (key): Linear(in_features=64, out_features=32, bias=False)
+            (query): Linear(in_features=64, out_features=32, bias=False)
+            (value): Linear(in_features=64, out_features=32, bias=False)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (linear): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (norm3): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (ff): FeedForwardBLock(
+        (linear1): Linear(in_features=64, out_features=256, bias=True)
+        (gelu): GELU(approximate='none')
+        (linear2): Linear(in_features=256, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (fc_out): Linear(in_features=64, out_features=27, bias=True)
+)

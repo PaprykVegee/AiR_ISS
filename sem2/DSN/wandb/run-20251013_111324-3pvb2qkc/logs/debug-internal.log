@@ -1,0 +1,18 @@
+{"time":"2025-10-13T11:13:25.52362836+02:00","level":"INFO","msg":"stream: starting","core version":"0.22.1"}
+{"time":"2025-10-13T11:13:25.989725789+02:00","level":"INFO","msg":"stream: created new stream","id":"3pvb2qkc"}
+{"time":"2025-10-13T11:13:25.989819061+02:00","level":"INFO","msg":"handler: started","stream_id":"3pvb2qkc"}
+{"time":"2025-10-13T11:13:25.989953111+02:00","level":"INFO","msg":"stream: started","id":"3pvb2qkc"}
+{"time":"2025-10-13T11:13:25.989975106+02:00","level":"INFO","msg":"writer: started","stream_id":"3pvb2qkc"}
+{"time":"2025-10-13T11:13:25.99002561+02:00","level":"INFO","msg":"sender: started","stream_id":"3pvb2qkc"}
+{"time":"2025-10-13T11:13:26.658394415+02:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":37}
+{"time":"2025-10-13T11:13:26.853222385+02:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":32}
+{"time":"2025-10-13T11:13:41.818448229+02:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":2706}
+{"time":"2025-10-13T11:13:41.841044794+02:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":6}
+{"time":"2025-10-13T11:13:56.814958023+02:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":5370}
+{"time":"2025-10-13T11:13:56.878152803+02:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":12}
+{"time":"2025-10-13T11:14:03.163227832+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.00241441}],"total_operations":1}}
+{"time":"2025-10-13T11:14:04.066518354+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-13T11:14:04.605689513+02:00","level":"INFO","msg":"stream: closing","id":"3pvb2qkc"}
+{"time":"2025-10-13T11:14:04.605707956+02:00","level":"INFO","msg":"handler: closed","stream_id":"3pvb2qkc"}
+{"time":"2025-10-13T11:14:04.605758634+02:00","level":"INFO","msg":"sender: closed","stream_id":"3pvb2qkc"}
+{"time":"2025-10-13T11:14:04.605769566+02:00","level":"INFO","msg":"stream: closed","id":"3pvb2qkc"}

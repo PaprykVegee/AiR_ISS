@@ -1,0 +1,77 @@
+[{"variableName": "idx2letter", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "letter2idx", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "letters", "type": "list", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.list"}, {"variableName": "mapping", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "src", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_in", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_mask", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_out", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}]
+Source (numbers): tensor([[4, 1, 2]])
+Target Output (words) idx: tensor([[ 6, 15, 21, 18, 15, 14,  5, 20, 23, 15]])
+Target Output (words) letter: ['F', 'O', 'U', 'R', 'O', 'N', 'E', 'T', 'W', 'O']
+Target Input (words with <BOS>) idx: tensor([[ 0,  6, 15, 21, 18, 15, 14,  5, 20, 23]])
+Target Input (words with <BOS>) letter: ['<BOS>', 'F', 'O', 'U', 'R', 'O', 'N', 'E', 'T', 'W']
+[{"variableName": "idx2letter", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "letter2idx", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "letters", "type": "list", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.list"}, {"variableName": "mapping", "type": "dictionary", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "builtins.dict"}, {"variableName": "src", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_in", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_mask", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}, {"variableName": "tgt_out", "type": "tensor", "supportedEngines": ["pandas"], "isLocalVariable": false, "rawType": "torch.Tensor"}]
+NumberToWordTranslator(
+  (src_emb): Embedding(10, 64)
+  (tgt_emb): Embedding(27, 64)
+  (src_pos): PositionalEncoding()
+  (tgt_pos): PositionalEncoding()
+  (encoder): ModuleList(
+    (0-1): 2 x EncoderBlock(
+      (attn): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-1): 2 x Head(
+            (key): Linear(in_features=64, out_features=32, bias=False)
+            (query): Linear(in_features=64, out_features=32, bias=False)
+            (value): Linear(in_features=64, out_features=32, bias=False)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (linear): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (ff): FeedForwardBLock(
+        (linear1): Linear(in_features=64, out_features=128, bias=True)
+        (gelu): GELU(approximate='none')
+        (linear2): Linear(in_features=128, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (dropout): Dropout(p=0.5, inplace=False)
+    )
+  )
+  (decoder): ModuleList(
+    (0-1): 2 x DecoderBlock(
+      (self_attn): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-1): 2 x Head(
+            (key): Linear(in_features=64, out_features=32, bias=False)
+            (query): Linear(in_features=64, out_features=32, bias=False)
+            (value): Linear(in_features=64, out_features=32, bias=False)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (linear): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (cross_attn): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-1): 2 x Head(
+            (key): Linear(in_features=64, out_features=32, bias=False)
+            (query): Linear(in_features=64, out_features=32, bias=False)
+            (value): Linear(in_features=64, out_features=32, bias=False)
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (linear): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (norm3): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (ff): FeedForwardBLock(
+        (linear1): Linear(in_features=64, out_features=256, bias=True)
+        (gelu): GELU(approximate='none')
+        (linear2): Linear(in_features=256, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (dropout): Dropout(p=0.5, inplace=False)
+    )
+  )
+  (fc_out): Linear(in_features=64, out_features=27, bias=True)
+)
