@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimage.a CMakeFiles/image.dir/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/utils/image.cc.o CMakeFiles/image.dir/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/utils/matrix.cc.o
+/usr/bin/ranlib libimage.a

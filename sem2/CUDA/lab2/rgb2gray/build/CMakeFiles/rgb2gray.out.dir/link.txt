@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/rgb2gray.out.dir/rgb2gray.cu.o -o rgb2gray.out   -L/usr/lib/x86_64-linux-gnu/stubs  libimage.a -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

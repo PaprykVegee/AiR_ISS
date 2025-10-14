@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/image_diff.out.dir/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/utils/image_diff.cc.o -o image_diff.out  libimage.a 

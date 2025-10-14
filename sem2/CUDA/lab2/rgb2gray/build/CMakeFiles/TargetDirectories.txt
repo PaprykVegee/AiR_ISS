@@ -1,0 +1,5 @@
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/rgb2gray/build/CMakeFiles/image.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/rgb2gray/build/CMakeFiles/rgb2gray.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/rgb2gray/build/CMakeFiles/image_diff.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/rgb2gray/build/CMakeFiles/edit_cache.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/rgb2gray/build/CMakeFiles/rebuild_cache.dir

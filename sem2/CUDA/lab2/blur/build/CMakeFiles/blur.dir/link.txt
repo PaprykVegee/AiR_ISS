@@ -1,0 +1,2 @@
+/usr/bin/ar qc libblur.a CMakeFiles/blur.dir/blur.cu.o
+/usr/bin/ranlib libblur.a
