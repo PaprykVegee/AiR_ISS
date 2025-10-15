@@ -1,0 +1,136 @@
+Step [0/5000], Train Loss: 4.7450, Val Loss: 4.1695
+New best model saved (Val Loss: 4.1695)
+Step [50/5000], Train Loss: 2.7319, Val Loss: 2.6906
+New best model saved (Val Loss: 2.6906)
+Step [100/5000], Train Loss: 2.7320, Val Loss: 2.6457
+New best model saved (Val Loss: 2.6457)
+Step [150/5000], Train Loss: 2.5622, Val Loss: 2.6111
+New best model saved (Val Loss: 2.6111)
+Step [200/5000], Train Loss: 2.6070, Val Loss: 2.6057
+New best model saved (Val Loss: 2.6057)
+Step [250/5000], Train Loss: 2.5215, Val Loss: 2.5652
+New best model saved (Val Loss: 2.5652)
+Step [300/5000], Train Loss: 2.7155, Val Loss: 2.5709
+Step [350/5000], Train Loss: 2.5033, Val Loss: 2.5393
+New best model saved (Val Loss: 2.5393)
+Step [400/5000], Train Loss: 2.4787, Val Loss: 2.4739
+New best model saved (Val Loss: 2.4739)
+Step [450/5000], Train Loss: 2.5215, Val Loss: 2.4841
+Step [500/5000], Train Loss: 2.4420, Val Loss: 2.4158
+New best model saved (Val Loss: 2.4158)
+Step [550/5000], Train Loss: 2.4348, Val Loss: 2.4292
+Step [600/5000], Train Loss: 2.3487, Val Loss: 2.3566
+New best model saved (Val Loss: 2.3566)
+Step [650/5000], Train Loss: 2.3128, Val Loss: 2.3321
+New best model saved (Val Loss: 2.3321)
+Step [700/5000], Train Loss: 2.4016, Val Loss: 2.2996
+New best model saved (Val Loss: 2.2996)
+Step [750/5000], Train Loss: 2.2318, Val Loss: 2.3147
+Step [800/5000], Train Loss: 2.1943, Val Loss: 2.2987
+New best model saved (Val Loss: 2.2987)
+Step [850/5000], Train Loss: 2.3065, Val Loss: 2.2875
+New best model saved (Val Loss: 2.2875)
+Step [900/5000], Train Loss: 2.1735, Val Loss: 2.2425
+New best model saved (Val Loss: 2.2425)
+Step [950/5000], Train Loss: 2.2549, Val Loss: 2.2309
+New best model saved (Val Loss: 2.2309)
+Step [1000/5000], Train Loss: 2.2082, Val Loss: 2.2051
+New best model saved (Val Loss: 2.2051)
+Step [1050/5000], Train Loss: 2.2949, Val Loss: 2.1919
+New best model saved (Val Loss: 2.1919)
+Step [1100/5000], Train Loss: 2.2390, Val Loss: 2.1638
+New best model saved (Val Loss: 2.1638)
+Step [1150/5000], Train Loss: 2.1378, Val Loss: 2.2049
+Step [1200/5000], Train Loss: 2.1185, Val Loss: 2.1664
+Step [1250/5000], Train Loss: 2.2518, Val Loss: 2.1577
+New best model saved (Val Loss: 2.1577)
+Step [1300/5000], Train Loss: 2.1053, Val Loss: 2.1241
+New best model saved (Val Loss: 2.1241)
+Step [1350/5000], Train Loss: 2.1951, Val Loss: 2.1134
+New best model saved (Val Loss: 2.1134)
+Step [1400/5000], Train Loss: 2.1903, Val Loss: 2.0940
+New best model saved (Val Loss: 2.0940)
+Step [1450/5000], Train Loss: 2.1742, Val Loss: 2.1165
+Step [1500/5000], Train Loss: 2.2263, Val Loss: 2.0259
+New best model saved (Val Loss: 2.0259)
+Step [1550/5000], Train Loss: 2.1038, Val Loss: 2.0431
+Step [1600/5000], Train Loss: 2.1089, Val Loss: 2.0670
+Step [1650/5000], Train Loss: 2.0459, Val Loss: 2.0770
+Step [1700/5000], Train Loss: 2.0431, Val Loss: 2.0129
+New best model saved (Val Loss: 2.0129)
+Step [1750/5000], Train Loss: 1.9710, Val Loss: 2.0695
+Step [1800/5000], Train Loss: 2.0381, Val Loss: 2.0240
+Step [1850/5000], Train Loss: 2.0191, Val Loss: 2.0481
+Step [1900/5000], Train Loss: 2.0343, Val Loss: 2.0152
+Step [1950/5000], Train Loss: 2.0749, Val Loss: 2.0302
+Step [2000/5000], Train Loss: 2.2352, Val Loss: 1.9945
+New best model saved (Val Loss: 1.9945)
+Step [2050/5000], Train Loss: 2.0117, Val Loss: 1.9957
+Step [2100/5000], Train Loss: 1.9155, Val Loss: 1.9973
+Step [2150/5000], Train Loss: 2.0521, Val Loss: 1.9768
+New best model saved (Val Loss: 1.9768)
+Step [2200/5000], Train Loss: 2.0268, Val Loss: 1.9384
+New best model saved (Val Loss: 1.9384)
+Step [2250/5000], Train Loss: 1.9423, Val Loss: 1.9805
+Step [2300/5000], Train Loss: 2.0940, Val Loss: 1.9676
+Step [2350/5000], Train Loss: 1.9928, Val Loss: 2.0100
+Step [2400/5000], Train Loss: 1.9362, Val Loss: 2.0023
+Step [2450/5000], Train Loss: 1.9621, Val Loss: 1.9557
+Step [2500/5000], Train Loss: 1.9432, Val Loss: 1.9370
+New best model saved (Val Loss: 1.9370)
+Step [2550/5000], Train Loss: 1.9320, Val Loss: 1.9230
+New best model saved (Val Loss: 1.9230)
+Step [2600/5000], Train Loss: 1.9529, Val Loss: 1.9322
+Step [2650/5000], Train Loss: 1.9381, Val Loss: 1.9307
+Step [2700/5000], Train Loss: 2.0032, Val Loss: 1.9616
+Step [2750/5000], Train Loss: 1.8340, Val Loss: 1.9330
+Step [2800/5000], Train Loss: 1.8924, Val Loss: 1.9201
+New best model saved (Val Loss: 1.9201)
+Step [2850/5000], Train Loss: 1.8314, Val Loss: 1.9323
+Step [2900/5000], Train Loss: 1.8586, Val Loss: 1.9313
+Step [2950/5000], Train Loss: 1.7636, Val Loss: 1.8995
+New best model saved (Val Loss: 1.8995)
+Step [3000/5000], Train Loss: 1.8861, Val Loss: 1.9218
+Step [3050/5000], Train Loss: 1.9297, Val Loss: 1.9172
+Step [3100/5000], Train Loss: 1.9335, Val Loss: 1.8631
+New best model saved (Val Loss: 1.8631)
+Step [3150/5000], Train Loss: 1.8644, Val Loss: 1.8869
+Step [3200/5000], Train Loss: 1.8923, Val Loss: 1.9030
+Step [3250/5000], Train Loss: 2.0185, Val Loss: 1.8930
+Step [3300/5000], Train Loss: 1.7448, Val Loss: 1.8724
+Step [3350/5000], Train Loss: 1.8993, Val Loss: 1.9036
+Step [3400/5000], Train Loss: 1.9458, Val Loss: 1.9082
+Step [3450/5000], Train Loss: 1.9161, Val Loss: 1.8808
+Step [3500/5000], Train Loss: 1.8808, Val Loss: 1.8813
+Step [3550/5000], Train Loss: 1.9607, Val Loss: 1.8898
+Step [3600/5000], Train Loss: 1.8549, Val Loss: 1.8783
+Step [3650/5000], Train Loss: 1.9275, Val Loss: 1.8706
+Step [3700/5000], Train Loss: 1.9735, Val Loss: 1.8530
+New best model saved (Val Loss: 1.8530)
+Step [3750/5000], Train Loss: 1.8907, Val Loss: 1.8535
+Step [3800/5000], Train Loss: 1.7563, Val Loss: 1.8718
+Step [3850/5000], Train Loss: 1.8663, Val Loss: 1.8386
+New best model saved (Val Loss: 1.8386)
+Step [3900/5000], Train Loss: 1.9178, Val Loss: 1.8580
+Step [3950/5000], Train Loss: 1.8747, Val Loss: 1.8759
+Step [4000/5000], Train Loss: 1.7110, Val Loss: 1.8844
+Step [4050/5000], Train Loss: 1.8048, Val Loss: 1.8420
+Step [4100/5000], Train Loss: 1.8038, Val Loss: 1.8806
+Step [4150/5000], Train Loss: 1.7823, Val Loss: 1.8632
+Step [4200/5000], Train Loss: 1.8340, Val Loss: 1.8765
+Step [4250/5000], Train Loss: 1.8364, Val Loss: 1.8504
+Step [4300/5000], Train Loss: 1.8511, Val Loss: 1.7970
+New best model saved (Val Loss: 1.7970)
+Step [4350/5000], Train Loss: 1.9209, Val Loss: 1.8654
+Step [4400/5000], Train Loss: 1.9319, Val Loss: 1.8119
+Step [4450/5000], Train Loss: 1.8197, Val Loss: 1.8422
+Step [4500/5000], Train Loss: 1.7814, Val Loss: 1.8649
+Step [4550/5000], Train Loss: 1.8906, Val Loss: 1.8517
+Step [4600/5000], Train Loss: 1.9135, Val Loss: 1.8263
+Step [4650/5000], Train Loss: 1.7850, Val Loss: 1.8435
+Step [4700/5000], Train Loss: 1.8835, Val Loss: 1.8551
+Step [4750/5000], Train Loss: 1.8325, Val Loss: 1.8787
+Step [4800/5000], Train Loss: 1.8734, Val Loss: 1.8201
+Step [4850/5000], Train Loss: 1.8626, Val Loss: 1.8618
+Step [4900/5000], Train Loss: 1.6208, Val Loss: 1.8419
+Step [4950/5000], Train Loss: 1.7881, Val Loss: 1.8411

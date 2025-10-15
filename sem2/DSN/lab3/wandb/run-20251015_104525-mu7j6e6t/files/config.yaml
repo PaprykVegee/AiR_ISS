@@ -1,0 +1,52 @@
+_wandb:
+    value:
+        cli_version: 0.22.1
+        e:
+            we3clful6p85e84h9b64p3j646hm0rp1:
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "263816892416"
+                        used: "182333681664"
+                email: patryklorenc@student.agh.edu.pl
+                executable: /home/patryk/Desktop/venv/ML_venv/bin/python
+                git:
+                    commit: 513159bca9a425032d14013691a22c4604540bdf
+                    remote: https://github.com/PaprykVegee/AiR_ISS.git
+                gpu: NVIDIA GeForce RTX 2060
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 1920
+                      memoryTotal: "6442450944"
+                      name: NVIDIA GeForce RTX 2060
+                      uuid: GPU-8998eacd-0602-edab-bf3a-d74fac132c11
+                host: patryk-Legion-Y540-15IRH
+                memory:
+                    total: "33560875008"
+                os: Linux-6.8.0-85-generic-x86_64-with-glibc2.35
+                program: part2_todo-jvsc-0f252493-7f97-4a09-b676-10da6c255c36ad1e3112-c47a-4af0-b026-df0f661e5ac8.ipynb
+                python: CPython 3.10.12
+                root: /home/patryk/Desktop/AiR_ISS/sem2/DSN/lab3
+                startedAt: "2025-10-15T08:45:25.813058Z"
+                writerId: we3clful6p85e84h9b64p3j646hm0rp1
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 1
+                - 2
+                - 13
+                - 61
+            "4": 3.10.12
+            "5": 0.22.1
+            "8":
+                - 1
+            "12": 0.22.1
+            "13": linux-x86_64

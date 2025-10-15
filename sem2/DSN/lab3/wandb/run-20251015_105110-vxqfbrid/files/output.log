@@ -1,0 +1,17 @@
+Step [0/5000], Train Loss: 4.7758, Val Loss: 4.1165
+New best model saved (Val Loss: 4.1165)
+Step [50/5000], Train Loss: 2.7774, Val Loss: 2.7214
+New best model saved (Val Loss: 2.7214)
+Step [100/5000], Train Loss: 2.6501, Val Loss: 2.6520
+New best model saved (Val Loss: 2.6520)
+Step [150/5000], Train Loss: 2.6343, Val Loss: 2.6034
+New best model saved (Val Loss: 2.6034)
+Step [200/5000], Train Loss: 2.5701, Val Loss: 2.6011
+New best model saved (Val Loss: 2.6011)
+Step [250/5000], Train Loss: 2.5271, Val Loss: 2.5374
+New best model saved (Val Loss: 2.5374)
+Step [300/5000], Train Loss: 2.6084, Val Loss: 2.5524
+Step [350/5000], Train Loss: 2.5282, Val Loss: 2.5229
+New best model saved (Val Loss: 2.5229)
+Step [400/5000], Train Loss: 2.4059, Val Loss: 2.5159
+New best model saved (Val Loss: 2.5159)
