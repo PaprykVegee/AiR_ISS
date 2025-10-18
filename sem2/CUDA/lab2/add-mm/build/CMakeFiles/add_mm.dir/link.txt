@@ -1,0 +1,2 @@
+/usr/bin/ar qc libadd_mm.a CMakeFiles/add_mm.dir/add_mm.cu.o
+/usr/bin/ranlib libadd_mm.a

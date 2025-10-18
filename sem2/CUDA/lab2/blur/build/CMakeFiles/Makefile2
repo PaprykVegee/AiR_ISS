@@ -136,8 +136,8 @@ CMakeFiles/blur.dir/clean:
 # Target rules for target CMakeFiles/blur_main.out.dir
 
 # All Build rule for target.
-CMakeFiles/blur_main.out.dir/all: CMakeFiles/image.dir/all
 CMakeFiles/blur_main.out.dir/all: CMakeFiles/blur.dir/all
+CMakeFiles/blur_main.out.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blur_main.out.dir/build.make CMakeFiles/blur_main.out.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blur_main.out.dir/build.make CMakeFiles/blur_main.out.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/blur/build/CMakeFiles --progress-num=3,4 "Built target blur_main.out"

@@ -1,0 +1,6 @@
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/mult-mv/build/CMakeFiles/matrix.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/mult-mv/build/CMakeFiles/mult_mv.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/mult-mv/build/CMakeFiles/mult_mv_main.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/mult-mv/build/CMakeFiles/testcase_generator.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/mult-mv/build/CMakeFiles/edit_cache.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/mult-mv/build/CMakeFiles/rebuild_cache.dir

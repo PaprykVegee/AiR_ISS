@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmatrix.a CMakeFiles/matrix.dir/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/utils/matrix.cc.o
+/usr/bin/ranlib libmatrix.a

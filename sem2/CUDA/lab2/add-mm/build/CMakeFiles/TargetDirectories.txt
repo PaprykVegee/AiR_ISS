@@ -1,0 +1,6 @@
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/add-mm/build/CMakeFiles/matrix.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/add-mm/build/CMakeFiles/add_mm.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/add-mm/build/CMakeFiles/add_mm_main.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/add-mm/build/CMakeFiles/testcase_generator.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/add-mm/build/CMakeFiles/edit_cache.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab2/add-mm/build/CMakeFiles/rebuild_cache.dir

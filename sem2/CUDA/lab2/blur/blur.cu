@@ -4,31 +4,37 @@
 
 __global__ void blurKernel(float *out, float *in, int width, int height, int blurSize)
 {
-    int x = threadIdx.x + blockIdx.x * blockDim.x;
-    int y = threadIdx.y + blockIdx.y * blockDim.y;
+    int x = blockIdx.x * blockDim.x + threadIdx.x;
+    int y = blockIdx.y * blockDim.y + threadIdx.y;
 
-    if (x >= width || y >= height) return;
-
-    int half = blurSize / 2;
-
-    float sum = 0.0f;
+    int contextRadius = (blurSize - 1) / 2;
+    float accumVal = 0.0f;
     int count = 0;
 
-    for (int ky = -half; ky <= half; ky++) {
-        for (int kx = -half; kx <= half; kx++) {
-            int nx = x + kx;
-            int ny = y + ky;
+    if (x >= contextRadius && x < width - contextRadius && y >= contextRadius && y < height - contextRadius)
+    {
+        for (int dy = -contextRadius; dy <= contextRadius; dy++)
+        {
+            for (int dx = -contextRadius; dx <= contextRadius; dx++)
+            {
+                int ix = x + dx;
+                int iy = y + dy;
+                int index = iy * width + ix;
 
-            if (nx >= 0 && nx < width && ny >= 0 && ny < height) {
-                sum += in[ny * width + nx];
+                accumVal += in[index];
                 count++;
             }
         }
+
+        out[y * width + x] = accumVal / count;
+    }
+    else
+    {
+        out[y * width + x] = 0.0f;
     }
 
-    // średnia z sąsiadów
-    out[y * width + x] = sum / count;
 }
+
 
 
 Image imageBlurOnDevice(const Image &inputImage, int blurSize)
@@ -43,10 +49,12 @@ Image imageBlurOnDevice(const Image &inputImage, int blurSize)
 
     cudaMemcpy(d_inputImage, inputImage.getDataConstPtr(), inputImage.getRows() * inputImage.getCols() * sizeof(float), cudaMemcpyHostToDevice);
 
-    dim3 dimGrid(ceil((float)outputImage.getCols() / blurSize), ceil((float)outputImage.getRows() / blurSize));
-    dim3 dimBlock(blurSize, blurSize, 1);
+    dim3 dimGrid(ceil((float)outputImage.getCols() / TILE_WIDTH),
+                ceil((float)outputImage.getRows() / TILE_WIDTH));
+    dim3 dimBlock(TILE_WIDTH, TILE_WIDTH, 1);
 
-    blurKernel<<<dimGrid, dimBlock>>>(d_outputImage, d_inputImage, 3, outputImage.getCols(), outputImage.getRows());
+    blurKernel<<<dimGrid, dimBlock>>>(d_outputImage, d_inputImage,
+        outputImage.getCols(), outputImage.getRows(), blurSize);
 
     cudaMemcpy(outputImage.getDataPtr(), d_outputImage, outputImage.getRows() * outputImage.getCols() * sizeof(float), cudaMemcpyDeviceToHost);
 

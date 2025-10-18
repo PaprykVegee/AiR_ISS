@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/mult_mv_main.out.dir/mult_mv_main.cc.o -o mult_mv_main.out   -L/usr/lib/x86_64-linux-gnu/stubs  libmult_mv.a libmatrix.a -lcudadevrt -lcudart_static -lrt -lpthread -ldl 
