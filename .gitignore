@@ -2,3 +2,7 @@ sem2/wandb/
 sem2/data/
 sem2/PIAOM/lab1/lab01_data/
 sem2/PIAOM/data/
+sem2/wandb
+sem2/DSN/annotations.zip
+sem2/DSN/data
+sem2/DSN/lab4/vit/weights
