@@ -1,0 +1,62 @@
+_wandb:
+    value:
+        cli_version: 0.22.1
+        e:
+            fgj58znto4ffkrbqrener4v81c9ck4nn:
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "263816892416"
+                        used: "193367248896"
+                email: patryklorenc@student.agh.edu.pl
+                executable: /home/patryk/Desktop/venv/ML_venv/bin/python
+                git:
+                    commit: 40dc9cac46a2c5c7c7c2fed6555cb3f833b541bd
+                    remote: https://github.com/PaprykVegee/AiR_ISS.git
+                gpu: NVIDIA GeForce RTX 2060
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 1920
+                      memoryTotal: "6442450944"
+                      name: NVIDIA GeForce RTX 2060
+                      uuid: GPU-8998eacd-0602-edab-bf3a-d74fac132c11
+                host: patryk-Legion-Y540-15IRH
+                memory:
+                    total: "33560866816"
+                os: Linux-6.8.0-85-generic-x86_64-with-glibc2.35
+                program: vit_todo-jvsc-a2d6c960-2caf-46ef-9c81-51e2c41c79305f39817f-088b-4376-b3a8-fc35f15b80a4.ipynb
+                python: CPython 3.10.12
+                root: /home/patryk/Desktop/AiR_ISS
+                startedAt: "2025-10-26T18:11:38.330101Z"
+                writerId: fgj58znto4ffkrbqrener4v81c9ck4nn
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+            "3":
+                - 13
+            "4": 3.10.12
+            "5": 0.22.1
+            "6": 4.56.2
+            "8":
+                - 1
+            "12": 0.22.1
+            "13": linux-x86_64
