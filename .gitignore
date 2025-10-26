@@ -6,3 +6,10 @@ sem2/wandb
 sem2/DSN/annotations.zip
 sem2/DSN/data
 sem2/DSN/lab4/vit/weights
+sem2/PIAOM/lab4/data
+sem2/PIAOM/lab4/lightning_logs
+best_vit_model.pth
+lightning_logs
+data/medmnist
+.vscode
+data

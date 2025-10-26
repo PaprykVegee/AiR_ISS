@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmult_mm.a CMakeFiles/mult_mm.dir/mult_mm.cu.o
+/usr/bin/ranlib libmult_mm.a
