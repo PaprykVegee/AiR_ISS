@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhistogram.a CMakeFiles/histogram.dir/histogram.cu.o
+/usr/bin/ranlib libhistogram.a

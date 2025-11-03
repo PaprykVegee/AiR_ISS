@@ -1,0 +1,4 @@
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab4/histogram/build/CMakeFiles/histogram.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab4/histogram/build/CMakeFiles/histogram_main.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab4/histogram/build/CMakeFiles/edit_cache.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab4/histogram/build/CMakeFiles/rebuild_cache.dir

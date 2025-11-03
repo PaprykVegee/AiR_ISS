@@ -1,0 +1,54 @@
+[Epoch 1, Batch 100] loss: 2.318
+[Epoch 1, Batch 200] loss: 2.310
+[Epoch 1, Batch 300] loss: 2.307
+[Epoch 1, Batch 400] loss: 2.306
+Val Loss: 2.303, Accuracy: 11.35%
+[Epoch 2, Batch 100] loss: 2.304
+[Epoch 2, Batch 200] loss: 2.305
+[Epoch 2, Batch 300] loss: 2.304
+[Epoch 2, Batch 400] loss: 2.304
+Val Loss: 2.303, Accuracy: 11.35%
+[Epoch 3, Batch 100] loss: 2.303
+[Epoch 3, Batch 200] loss: 2.303
+[Epoch 3, Batch 300] loss: 2.304
+[Epoch 3, Batch 400] loss: 2.303
+Val Loss: 2.303, Accuracy: 11.35%
+[Epoch 4, Batch 100] loss: 2.303
+[Epoch 4, Batch 200] loss: 2.303
+[Epoch 4, Batch 300] loss: 2.303
+[Epoch 4, Batch 400] loss: 2.302
+Val Loss: 2.301, Accuracy: 11.35%
+[Epoch 5, Batch 100] loss: 2.302
+[Epoch 5, Batch 200] loss: 2.303
+[Epoch 5, Batch 300] loss: 2.302
+[Epoch 5, Batch 400] loss: 2.293
+Val Loss: 1.308, Accuracy: 51.09%
+[Epoch 6, Batch 100] loss: 0.917
+[Epoch 6, Batch 200] loss: 0.713
+[Epoch 6, Batch 300] loss: 0.599
+[Epoch 6, Batch 400] loss: 0.516
+Val Loss: 0.491, Accuracy: 82.22%
+[Epoch 7, Batch 100] loss: 0.466
+[Epoch 7, Batch 200] loss: 0.419
+[Epoch 7, Batch 300] loss: 0.413
+[Epoch 7, Batch 400] loss: 0.357
+Val Loss: 0.272, Accuracy: 90.88%
+[Epoch 8, Batch 100] loss: 0.269
+[Epoch 8, Batch 200] loss: 0.233
+[Epoch 8, Batch 300] loss: 0.215
+[Epoch 8, Batch 400] loss: 0.231
+Val Loss: 0.182, Accuracy: 94.06%
+[Epoch 9, Batch 100] loss: 0.163
+[Epoch 9, Batch 200] loss: 0.152
+[Epoch 9, Batch 300] loss: 0.150
+[Epoch 9, Batch 400] loss: 0.132
+Val Loss: 0.111, Accuracy: 96.40%
+[Epoch 10, Batch 100] loss: 0.118
+[Epoch 10, Batch 200] loss: 0.120
+[Epoch 10, Batch 300] loss: 0.124
+[Epoch 10, Batch 400] loss: 0.122
+Val Loss: 0.107, Accuracy: 96.79%
+[Epoch 11, Batch 100] loss: 0.136
+[Epoch 11, Batch 200] loss: 0.111
+[Epoch 11, Batch 300] loss: 0.088
+[Epoch 11, Batch 400] loss: 0.086

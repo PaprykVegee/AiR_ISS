@@ -60,7 +60,57 @@ __global__ void matrixMulTiledKernel(const float *A, const float *B, float *C,
 __global__ void matrixMulGranularKernel(const float *A, const float *B, float *C,
                                         int A_rows, int A_cols, int B_cols)
 {
+    __shared__ float tileA[TILE_SIZE][TILE_SIZE];
+    __shared__ float tileB1[TILE_SIZE][TILE_SIZE];
+    __shared__ float tileB2[TILE_SIZE][TILE_SIZE];
 
+    int row = blockIdx.y * blockDim.y + threadIdx.y;
+    int col1 = blockIdx.x * blockDim.x + threadIdx.x;
+    int col2 = col1 + blockDim.x;
+
+    float acc1 = 0.0f;
+    float acc2 = 0.0f;
+
+    for (int t = 0; t < (A_cols + TILE_SIZE - 1) / TILE_SIZE; ++t)
+    {
+        if (row < A_rows && (t * TILE_SIZE + threadIdx.x) < A_cols)
+            tileA[threadIdx.y][threadIdx.x] = A[row * A_cols + t * TILE_SIZE + threadIdx.x];
+        else
+            tileA[threadIdx.y][threadIdx.x] = 0.0f;
+
+        if ((t * TILE_SIZE + threadIdx.y) < A_cols) {
+            if (col1 < B_cols)
+                tileB1[threadIdx.y][threadIdx.x] = B[(t * TILE_SIZE + threadIdx.y) * B_cols + col1];
+            else
+                tileB1[threadIdx.y][threadIdx.x] = 0.0f;
+
+            if (col2 < B_cols)
+                tileB2[threadIdx.y][threadIdx.x] = B[(t * TILE_SIZE + threadIdx.y) * B_cols + col2];
+            else
+                tileB2[threadIdx.y][threadIdx.x] = 0.0f;
+        } else {
+            tileB1[threadIdx.y][threadIdx.x] = 0.0f;
+            tileB2[threadIdx.y][threadIdx.x] = 0.0f;
+        }
+
+        __syncthreads();
+
+
+        for (int k = 0; k < TILE_SIZE; ++k)
+        {
+            acc1 += tileA[threadIdx.y][k] * tileB1[k][threadIdx.x];
+            acc2 += tileA[threadIdx.y][k] * tileB2[k][threadIdx.x];
+        }
+
+        __syncthreads();
+    }
+
+    if (row < A_rows) {
+        if (col1 < B_cols)
+            C[row * B_cols + col1] = acc1;
+        if (col2 < B_cols)
+            C[row * B_cols + col2] = acc2;
+    }
 }
 
 Matrix multMatrixMatrixOnDevice(const Matrix &A, const Matrix &B, MultMethod method)
