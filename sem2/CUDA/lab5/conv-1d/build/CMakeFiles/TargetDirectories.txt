@@ -1,0 +1,6 @@
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab5/conv-1d/build/CMakeFiles/conv_1d.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab5/conv-1d/build/CMakeFiles/conv_1d_main.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab5/conv-1d/build/CMakeFiles/testcase_generator.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab5/conv-1d/build/CMakeFiles/testcase_verificator.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab5/conv-1d/build/CMakeFiles/edit_cache.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab5/conv-1d/build/CMakeFiles/rebuild_cache.dir

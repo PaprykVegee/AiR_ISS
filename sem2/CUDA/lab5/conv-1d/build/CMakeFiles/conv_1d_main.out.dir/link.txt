@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/conv_1d_main.out.dir/conv_1d_main.cc.o -o conv_1d_main.out   -L/usr/lib/x86_64-linux-gnu/stubs  libconv_1d.a -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

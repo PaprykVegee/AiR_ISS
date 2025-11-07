@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/testcase_verificator.out.dir/testcase_verificator.cc.o -o testcase_verificator.out 

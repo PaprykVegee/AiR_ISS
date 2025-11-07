@@ -1,0 +1,2 @@
+/usr/bin/ar qc libconv_1d.a CMakeFiles/conv_1d.dir/conv_1d.cu.o
+/usr/bin/ranlib libconv_1d.a

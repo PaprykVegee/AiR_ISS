@@ -15,3 +15,13 @@ data/medmnist
 data
 sem2/PIAOM/lab5/data
 sem2/DSN/lab5/data
+checkpoints
+wandb
+sem2/DSN/annotations.zip
+sem2/DSN/lab6/diffusion_final.ckpt
+sem2/DSN/lab7/test.zip
+sem2/DSN/lab7/train.zip
+sem2/DSN/wandb
+Test
+Train
+wandb
