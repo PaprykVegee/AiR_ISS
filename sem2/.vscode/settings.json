@@ -59,6 +59,12 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "typeinfo": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "__locale": "cpp",
+        "ios": "cpp",
+        "cinttypes": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "unordered_set": "cpp"
     }
 }

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/scan_main.out.dir/scan_main.cc.o -o scan_main.out   -L/usr/lib/x86_64-linux-gnu/stubs  libscan.a -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

@@ -1,0 +1,4 @@
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab7/scan/build/CMakeFiles/scan.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab7/scan/build/CMakeFiles/scan_main.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab7/scan/build/CMakeFiles/edit_cache.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab7/scan/build/CMakeFiles/rebuild_cache.dir

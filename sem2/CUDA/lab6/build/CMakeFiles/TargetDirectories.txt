@@ -1,0 +1,4 @@
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab6/build/CMakeFiles/reduction.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab6/build/CMakeFiles/reduction_main.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab6/build/CMakeFiles/edit_cache.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab6/build/CMakeFiles/rebuild_cache.dir

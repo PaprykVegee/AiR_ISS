@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/reduction_main.out.dir/reduction_main.cc.o -o reduction_main.out   -L/usr/lib/x86_64-linux-gnu/stubs  libreduction.a -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

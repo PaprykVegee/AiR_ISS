@@ -1,0 +1,2 @@
+/usr/bin/ar qc libreduction.a CMakeFiles/reduction.dir/reduction.cu.o
+/usr/bin/ranlib libreduction.a
