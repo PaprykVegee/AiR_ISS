@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/histogram_main.out.dir/histogram_main.cc.o -o histogram_main.out   -L/usr/lib/x86_64-linux-gnu/stubs  libhistogram.a -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

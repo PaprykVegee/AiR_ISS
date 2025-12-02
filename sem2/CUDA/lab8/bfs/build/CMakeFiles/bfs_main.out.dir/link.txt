@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/bfs_main.out.dir/bfs_main.cc.o -o bfs_main.out   -L/usr/lib/x86_64-linux-gnu/stubs  libbfs.a -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

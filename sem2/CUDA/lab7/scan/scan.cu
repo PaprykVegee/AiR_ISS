@@ -76,115 +76,115 @@ std::vector<int> scanOnCPU(const std::vector<int> &in)
 // ===============================================================Kod do liczneia na GPU============================================
 // =================================================================================================================================
 
-std::vector<int> scanOnDevice(const std::vector<int> &in, ScanMethod method)
-{
-    size_t n = in.size();
-    int blockSize = 256;
-    int gridSize = (n + blockSize - 1) / blockSize;
-    size_t sharedMemSize = blockSize * sizeof(int);
-    int numBlocks = gridSize;
+// std::vector<int> scanOnDevice(const std::vector<int> &in, ScanMethod method)
+// {
+//     size_t n = in.size();
+//     int blockSize = 256;
+//     int gridSize = (n + blockSize - 1) / blockSize;
+//     size_t sharedMemSize = blockSize * sizeof(int);
+//     int numBlocks = gridSize;
 
-    int *d_in, *d_out, *d_blockSums;
-    cudaMalloc(&d_in, n * sizeof(int));
-    cudaMalloc(&d_out, n * sizeof(int));
-    cudaMalloc(&d_blockSums, numBlocks * sizeof(int));
+//     int *d_in, *d_out, *d_blockSums;
+//     cudaMalloc(&d_in, n * sizeof(int));
+//     cudaMalloc(&d_out, n * sizeof(int));
+//     cudaMalloc(&d_blockSums, numBlocks * sizeof(int));
 
-    cudaMemcpy(d_in, in.data(), n * sizeof(int), cudaMemcpyHostToDevice);
+//     cudaMemcpy(d_in, in.data(), n * sizeof(int), cudaMemcpyHostToDevice);
 
-    if (method == ScanMethod::KoggeStone) {
-        kernelScan<<<gridSize, blockSize, sharedMemSize>>>(d_out, d_in, n);
-        cudaDeviceSynchronize(); // upewniamy się, że kernel skończył
+//     if (method == ScanMethod::KoggeStone) {
+//         kernelScan<<<gridSize, blockSize, sharedMemSize>>>(d_out, d_in, n);
+//         cudaDeviceSynchronize(); // upewniamy się, że kernel skończył
 
-        // kopiowanie wyników i print
-        std::vector<int> out(n);
-        cudaMemcpy(out.data(), d_out, n * sizeof(int), cudaMemcpyDeviceToHost);
-        // std::cout << "After kernelScan:" << std::endl;
-        // for (size_t i = 0; i < n; ++i) std::cout << out[i] << " ";
-        // std::cout << std::endl;
+//         // kopiowanie wyników i print
+//         std::vector<int> out(n);
+//         cudaMemcpy(out.data(), d_out, n * sizeof(int), cudaMemcpyDeviceToHost);
+//         // std::cout << "After kernelScan:" << std::endl;
+//         // for (size_t i = 0; i < n; ++i) std::cout << out[i] << " ";
+//         // std::cout << std::endl;
 
-        kernelExtractSums<<<numBlocks, blockSize>>>(d_out, d_blockSums, n, 512);
+//         kernelExtractSums<<<numBlocks, blockSize>>>(d_out, d_blockSums, n, 512);
 
-        cudaDeviceSynchronize();
+//         cudaDeviceSynchronize();
 
-        std::vector<int> blockSums(numBlocks);
-        cudaMemcpy(blockSums.data(), d_blockSums, numBlocks * sizeof(int), cudaMemcpyDeviceToHost);
-        // std::cout << "After kernelExtractSums:" << std::endl;
-        // for (int val : blockSums) std::cout << val << " ";
-        // std::cout << std::endl;
+//         std::vector<int> blockSums(numBlocks);
+//         cudaMemcpy(blockSums.data(), d_blockSums, numBlocks * sizeof(int), cudaMemcpyDeviceToHost);
+//         // std::cout << "After kernelExtractSums:" << std::endl;
+//         // for (int val : blockSums) std::cout << val << " ";
+//         // std::cout << std::endl;
 
-        kernelScan<<<1, numBlocks, numBlocks * sizeof(int)>>>(d_blockSums, d_blockSums, numBlocks);
-        cudaDeviceSynchronize();
+//         kernelScan<<<1, numBlocks, numBlocks * sizeof(int)>>>(d_blockSums, d_blockSums, numBlocks);
+//         cudaDeviceSynchronize();
 
-        // cudaMemcpy(blockSums.data(), d_blockSums, numBlocks * sizeof(int), cudaMemcpyDeviceToHost);
-        // std::cout << "After scan of blockSums:" << std::endl;
-        // for (int val : blockSums) std::cout << val << " ";
-        // std::cout << std::endl;
+//         // cudaMemcpy(blockSums.data(), d_blockSums, numBlocks * sizeof(int), cudaMemcpyDeviceToHost);
+//         // std::cout << "After scan of blockSums:" << std::endl;
+//         // for (int val : blockSums) std::cout << val << " ";
+//         // std::cout << std::endl;
 
-        kernelAddSums<<<gridSize, blockSize>>>(d_out, d_blockSums, n);
-        cudaDeviceSynchronize();
+//         kernelAddSums<<<gridSize, blockSize>>>(d_out, d_blockSums, n);
+//         cudaDeviceSynchronize();
 
-        cudaMemcpy(out.data(), d_out, n * sizeof(int), cudaMemcpyDeviceToHost);
-        // std::cout << "After kernelAddSums:" << std::endl;
-        // for (size_t i = 0; i < n; ++i) std::cout << out[i] << " ";
-        // std::cout << std::endl;
+//         cudaMemcpy(out.data(), d_out, n * sizeof(int), cudaMemcpyDeviceToHost);
+//         // std::cout << "After kernelAddSums:" << std::endl;
+//         // for (size_t i = 0; i < n; ++i) std::cout << out[i] << " ";
+//         // std::cout << std::endl;
 
-        return out;
-    }
+//         return out;
+//     }
 
 
-    cudaDeviceSynchronize();
+//     cudaDeviceSynchronize();
 
-    std::vector<int> out(n);
-    cudaMemcpy(out.data(), d_out, n * sizeof(int), cudaMemcpyDeviceToHost);
+//     std::vector<int> out(n);
+//     cudaMemcpy(out.data(), d_out, n * sizeof(int), cudaMemcpyDeviceToHost);
 
-    cudaFree(d_in);
-    cudaFree(d_out);
-    cudaFree(d_blockSums);
+//     cudaFree(d_in);
+//     cudaFree(d_out);
+//     cudaFree(d_blockSums);
 
-    return out;
-}
+//     return out;
+// }
 
 
 // =================================================================================================================================
 // ===============================================================Kod do liczneia na CPU============================================
 // =================================================================================================================================
 
-// std::vector<int> scanOnDevice(const std::vector<int> &in, ScanMethod method)
-// {
-//     size_t n = in.size();
-//     int blockSize = 128;
-//     int gridSize = (n + blockSize - 1) / blockSize;
+std::vector<int> scanOnDevice(const std::vector<int> &in, ScanMethod method)
+{
+    size_t n = in.size();
+    int blockSize = 128;
+    int gridSize = (n + blockSize - 1) / blockSize;
 
-//     int *d_in, *d_out;
-//     cudaMalloc(&d_in, n * sizeof(int));
-//     cudaMalloc(&d_out, n * sizeof(int));
-//     cudaMemcpy(d_in, in.data(), n * sizeof(int), cudaMemcpyHostToDevice);
+    int *d_in, *d_out;
+    cudaMalloc(&d_in, n * sizeof(int));
+    cudaMalloc(&d_out, n * sizeof(int));
+    cudaMemcpy(d_in, in.data(), n * sizeof(int), cudaMemcpyHostToDevice);
 
-//     kernelScan<<<gridSize, blockSize, blockSize * sizeof(int)>>>(d_out, d_in, n);
-//     cudaDeviceSynchronize();
+    kernelScan<<<gridSize, blockSize, blockSize * sizeof(int)>>>(d_out, d_in, n);
+    cudaDeviceSynchronize();
 
-//     std::vector<int> gpuScan(n);
-//     cudaMemcpy(gpuScan.data(), d_out, n * sizeof(int), cudaMemcpyDeviceToHost);
+    std::vector<int> gpuScan(n);
+    cudaMemcpy(gpuScan.data(), d_out, n * sizeof(int), cudaMemcpyDeviceToHost);
 
-//     std::vector<int> blockSums = computeBlockSumsCPU(gpuScan, blockSize);
+    std::vector<int> blockSums = computeBlockSumsCPU(gpuScan, blockSize);
 
-//     blockSums = scanOnCPU(blockSums);
+    blockSums = scanOnCPU(blockSums);
 
-//     int *d_blockSums;
-//     cudaMalloc(&d_blockSums, blockSums.size() * sizeof(int));
-//     cudaMemcpy(d_blockSums, blockSums.data(), blockSums.size() * sizeof(int), cudaMemcpyHostToDevice);
+    int *d_blockSums;
+    cudaMalloc(&d_blockSums, blockSums.size() * sizeof(int));
+    cudaMemcpy(d_blockSums, blockSums.data(), blockSums.size() * sizeof(int), cudaMemcpyHostToDevice);
 
-//     kernelAddSums<<<gridSize, blockSize>>>(d_out, d_blockSums, n);
-//     cudaDeviceSynchronize();
+    kernelAddSums<<<gridSize, blockSize>>>(d_out, d_blockSums, n);
+    cudaDeviceSynchronize();
 
-//     cudaMemcpy(gpuScan.data(), d_out, n * sizeof(int), cudaMemcpyDeviceToHost);
+    cudaMemcpy(gpuScan.data(), d_out, n * sizeof(int), cudaMemcpyDeviceToHost);
 
-//     cudaFree(d_in);
-//     cudaFree(d_out);
-//     cudaFree(d_blockSums);
+    cudaFree(d_in);
+    cudaFree(d_out);
+    cudaFree(d_blockSums);
 
-//     return gpuScan;
-// }
+    return gpuScan;
+}
 
 std::vector<int> scanOnHost(const std::vector<int> &in)
 {

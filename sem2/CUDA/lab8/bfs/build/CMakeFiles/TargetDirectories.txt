@@ -1,0 +1,4 @@
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab8/bfs/build/CMakeFiles/bfs.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab8/bfs/build/CMakeFiles/bfs_main.out.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab8/bfs/build/CMakeFiles/edit_cache.dir
+/home/patryk/Desktop/AiR_ISS/sem2/CUDA/lab8/bfs/build/CMakeFiles/rebuild_cache.dir
