@@ -1,6 +1,0 @@
-{"time":"2025-10-20T10:59:30.867273491+02:00","level":"INFO","msg":"stream: starting","core version":"0.22.1"}
-{"time":"2025-10-20T10:59:43.029735159+02:00","level":"INFO","msg":"stream: created new stream","id":"vry323nf"}
-{"time":"2025-10-20T10:59:43.029950622+02:00","level":"INFO","msg":"handler: started","stream_id":"vry323nf"}
-{"time":"2025-10-20T10:59:43.030143641+02:00","level":"INFO","msg":"stream: started","id":"vry323nf"}
-{"time":"2025-10-20T10:59:43.030828703+02:00","level":"INFO","msg":"writer: started","stream_id":"vry323nf"}
-{"time":"2025-10-20T10:59:43.030826104+02:00","level":"INFO","msg":"sender: started","stream_id":"vry323nf"}
